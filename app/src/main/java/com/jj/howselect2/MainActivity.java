@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Context context;    
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemLongClick(View view, int position) {
 //                rv_main.removeView(view);
-//                myRvAdapter.notifyItemRemoved(position);
+                myRvAdapter.notifyItemRemoved(position);
 
                 myRvAdapter.notifyItemInserted(position);
             }
